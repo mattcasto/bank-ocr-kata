@@ -15,7 +15,7 @@ namespace BankOcrKata
             foreach (var accountNumber in accountFileReader.AccountNumbers)
             {
                 Console.WriteLine(accountNumber.RawText);
-                Console.WriteLine($"=> {accountNumber.Value} {accountNumber.Checksum} {ParseResult.StatusCode(accountNumber.Status)}");
+                Console.WriteLine($"=> {accountNumber.Value} {ParseResult.StatusCode(accountNumber.Status)}");
             }
         }
     }
